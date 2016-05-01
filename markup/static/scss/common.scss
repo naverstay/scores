@@ -1,0 +1,63 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    @if $font-fluid {
+        font-size:   .833333vw;
+        line-height: $size__line-height-html;
+        @include respond-to($page__width) {
+            font-size: 62.5%;
+        }
+    }
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    @if $my-classes {
+        background:  $color__background-body;
+        color:       $color__text-main;
+        font-size:   $font__size;
+        font-family: $font__family-main;
+        line-height: $font__line-height;
+    }
+}
+
+//.container, .container-fluid, .row, html, body, .page__wrapper, .page__footer, .header {
+//  min-width: map-get($breakpoints, xs);
+//}
+
+// todo: add func/mix/extend
+// .valign {
+//   display:        table;
+//   width:          100%;
+//   height:         100%;
+//   vertical-align: middle;
+//   &__cell {
+//     display:        table-cell;
+//     vertical-align: middle;
+//   }
+// }
+
+// pseudo reset
+%pseudo {
+    position: absolute;
+    top:      0;
+    left:     0;
+    z-index:  2;
+    display:  block;
+    content:  " ";
+}
+
+//list reset
+%mlp {
+    margin:     0;
+    padding:    0;
+    list-style: none;
+}
