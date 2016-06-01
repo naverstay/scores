@@ -9,6 +9,7 @@ $font-fluid: false !default;
 //== Breakpoints
 $breakpoints: (
     xs: $screen-xs-min,
+    ms: $screen-ms-min,
     sm: $screen-sm-min,
     md: $screen-md-min,
     lg: $screen-lg-min

@@ -14,6 +14,7 @@
         "normalize-opentype.css": "latest",
         "normalize-scss": "latest",
         "##JQUERY": "latest",
+        "bootstrap-select": "latest",
         "jquery": "latest",
         "jQuery-Mask-Plugin": "latest",
         "jquery-slimscroll": "latest",
@@ -25,7 +26,8 @@
         "jquery-countTo": "latest",
         "jquery-mousewheel": "latest",
         "jquery-colorbox": "latest",
-        "espi-a11y-dialog": "latest"
+        "espi-a11y-dialog": "latest",
+        "owl.carousel": "latest",
         "##BOOTSTRAP": "latest",
         "bootstrap": "latest",
         "bootstrap-modal": "latest",

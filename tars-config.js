@@ -8,11 +8,11 @@ module.exports = {
     "postcss": [],
     "svg": {
         "active": true,
-        "workflow": "sprite",
+        "workflow": "symbols",
         "symbolsConfig": {
-            "loadingType": "inject",
+            "loadingType": "separate-file-with-link",
             "usePolyfillForExternalSymbols": true,
-            "pathToExternalSymbolsFile": ""
+            "pathToExternalSymbolsFile": "static/img/general/"
         }
     },
     "js": {
@@ -51,10 +51,10 @@ module.exports = {
         "open": false,
         "browser": "default",
         "startUrl": "/index.html",
-        "useNotifyInBrowser": true,
-        "injectChanges": false
+        "useNotifyInBrowser": false,
+        "injectChanges": true
     },
-    "minifyHtml": false,
+    "minifyHtml": true,
     "staticPrefix": "static/",
     "buildPath": "./builds/",
     "useBuildVersioning": true,
