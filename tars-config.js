@@ -1,12 +1,16 @@
 module.exports = {
-    "postcss": [],
+    "postcss": [
+        // {
+        //     "name": "postcss-object-fit-images"
+        // }
+    ],
     "svg": {
         "active": true,
-        "workflow": "sprite",
+        "workflow": "symbols",
         "symbolsConfig": {
-            "loadingType": "inject",
+            "loadingType": "separate-file-with-link",
             "usePolyfillForExternalSymbols": true,
-            "pathToExternalSymbolsFile": ""
+            "pathToExternalSymbolsFile": "img/general"
         }
     },
     "css": {
@@ -42,11 +46,11 @@ module.exports = {
         "sounds": {},
         "taskFinishedText": "Task finished at: "
     },
-    "minifyHtml": false,
+    "minifyHtml": true,
     "generateStaticPath": true,
     "buildPath": "./builds/",
     "useBuildVersioning": true,
-    "useArchiver": true,
+    "useArchiver": false,
     "ulimit": 4096,
     "templater": "handlebars",
     "cssPreprocessor": "scss",

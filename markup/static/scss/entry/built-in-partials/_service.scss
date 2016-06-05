@@ -3,20 +3,20 @@
 /* This file can be overwritten by update-project! */
 
 /* Mixins, which are specific for current project */
-@import '../../mixins.scss';
+@import '../../mixins';
 
 /* Mixins and vars for sprite generation */
-@import '../../sprites-scss/sprite_96.scss';
-@import '../../sprites-scss/svg-sprite.scss';
+@import '../../sprites-scss/sprite_96';
+@import '../../sprites-scss/svg-sprite';
 
 /* Scss for used fonts */
-@import '../../fonts.scss';
+@import '../../fonts';
 
 /* Vars, which are specific for current project */
-@import '../../vars.scss';
+@import '../../vars';
 
 /* Styles for UI-elements */
-@import '../../GUI.scss';
+@import '../../GUI';
 
 /* Common styles for current project */
-@import '../../common.scss';
+@import '../../common';

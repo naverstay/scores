@@ -1,17 +1,17 @@
-@import '../../normalize.scss';
+@import '../../normalize';
 
 /* Libraries, which is used in current project. Can be removed! */
-@import '../partials/_libraries.scss';
+@import '../partials/_libraries';
 
 /* Libraries, which is used in current project. Do not remove! */
-@import '../built-in-partials/_service-ie8.scss';
+@import '../built-in-partials/_service-ie8';
 
 /* Plugins, which is used in current project. Can be removed! */
-@import '../partials/_plugins.scss';
+@import '../partials/_plugins';
 
 /* Components, which is used in current project. Can be removed! */
-@import '../partials/_components.scss';
-@import '../partials/_components-ie8.scss';
+@import '../partials/_components';
+@import '../partials/_components-ie8';
 
 /* Additional style files. Can be removed! */
-@import '../../etc/etc.scss';
+@import '../../etc/etc';

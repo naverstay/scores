@@ -1,2 +1,27 @@
-// File for scss-vars.
-// For example: main colors, paddings and so on.
+//== see libraries/bootstrap/variables.scss
+
+// $base-bg: #fff url(http://griddle.it/820-10-0) repeat-y center top;
+
+$my-classes: true !default;
+//== Auto-resize font
+$font-fluid: false !default;
+
+$transition-duration: .25s;
+
+//== Breakpoints
+
+$breakpoints: (
+    xs: 320px,
+    ms: 516px,
+    sm: 768px,
+    md: 984px,
+    lg: 1200px
+);
+
+//xs: $screen-xs-min,
+//ms: $screen-ms-min,
+//sm: $screen-sm-min,
+//md: $screen-md-min,
+//lg: $screen-lg-min
+
+//@debug map-get($breakpoints, xs);

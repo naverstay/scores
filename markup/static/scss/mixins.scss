@@ -1,32 +1,17 @@
 // Mixins.
 
-@mixin nl {
-    margin: 0;
-    padding: 0;
-    text-indent: 0;
-    list-style: none;
-    list-style-position: outside;
-}
-
-@mixin cf {
-    &:before,
-    &:after {
-        display: table;
-        content: "";
-    }
-
-    &:after {
-        clear: both;
-    }
-
-    .lt-ie8 & {
-        zoom: 1;
-    }
-}
-
-@mixin blocks-justify {
-    text-align: justify;
-    text-justify: newspaper;
-}
-
-// You can add your own mixins here:
+//@import "mixins/clearfix";
+@import "mixins/em-calc";
+//@import "mixins/flex-grid";
+//@import "mixins/fluid-font";
+//@import "mixins/grid";
+@import "mixins/percent";
+@import "mixins/placeholder";
+@import "mixins/rem-calc";
+@import "mixins/respond-to";
+//@import "mixins/shade";
+@import "mixins/slidefooter";
+@import "mixins/stickyfooter";
+@import "mixins/strip-units";
+//@import "mixins/timing-functions";
+@import "mixins/triangle";

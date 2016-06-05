@@ -1,22 +1,112 @@
 // Common styles of the project
 
 html, body {
+    min-width: map-get($breakpoints, xs);
     height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    @if $font-fluid {
+        font-size: .833333vw;
+        line-height: $size__line-height-html;
+        @include respond-to($page__width) {
+            font-size: 62.5%;
+        }
+    }
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    @if $my-classes {
+        // need add vars in vars.scss
+        //background: $color__background-body;
+        //color: $color__text-main;
+        //font-size: $font__size;
+        //font-family: $font__family-main;
+        //line-height: $font__line-height;
+    }
 }
 
 .page {
-    
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to(lg) {
+        //height: 2348px;
+    }
 }
 
-.page__wrapper {
-    min-height: 100%;
-    margin-bottom: -50px;
+//.container, .container-fluid, .row, html, body, .page__wrapper, .page__footer, .header {
+//  min-width: map-get($breakpoints, xs);
+//}
+
+// todo: add func/mix/extend
+// .valign {
+//   display:        table;
+//   width:          100%;
+//   height:         100%;
+//   vertical-align: middle;
+//   &__cell {
+//     display:        table-cell;
+//     vertical-align: middle;
+//   }
+// }
+
+//== pseudo reset
+%pseudo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
+    content: " ";
 }
 
-* html .page__wrapper {
-    height: 100%;
+//== list reset
+%mlp {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.page__buffer {
-    height: 50px;
+//== clearfix
+%cf {
+    &:before,
+    &:after {
+        display: table;
+        content: " ";
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+//== clearfix disable
+%cf-off {
+    &:before, &:after {
+        display: none;
+        clear: none;
+    }
+}
+
+//== text-decoration:hover
+%tduhn {
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+//== box-shadow forTests
+%bsh {
+    box-shadow: 0 0 0 1px #000 inset;
+}
+
+//== innerColorCell forTests
+%inner {
+    background-color: rgba(green, .3);
 }

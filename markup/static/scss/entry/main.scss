@@ -1,16 +1,16 @@
-@import '../normalize.scss';
+@import '../normalize';
 
 /* Libraries, which is used in current project. */
-@import 'partials/_libraries.scss';
+@import 'partials/_libraries';
 
 /* Libraries, which is used in current project. */
-@import 'built-in-partials/_service.scss';
+@import 'built-in-partials/_service';
 
 /* Plugins, which is used in current project. */
-@import 'partials/_plugins.scss';
+@import 'partials/_plugins';
 
 /* Components, which is used in current project. */
-@import 'partials/_components.scss';
+@import 'partials/_components';
 
 /* Additional style files. */
-@import '../etc/etc.scss';
+@import '../etc/etc';
