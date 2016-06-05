@@ -1,56 +1,18 @@
-///* Your custom fonts here */
-//
-///* Example
-//
-//@font-face {
-//    font-family: 'CustomFont';
-//    src: url('../fonts/Custom-Font.eot');
-//    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
-//         url('../fonts/Custom-Font.woff') format('woff'),
-//         url('../fonts/Custom-Font.svg#custom_font') format('svg');
-//    font-weight: 400;       // For normal width. It could has another value
-//    font-style: normal;     // Also could has another value
-//    }
-//
-//
-//// Var for using custom font
-//$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
-//*/
+/* Your custom fonts here */
 
-/* external font Helvetica Neue BEGIN */
+/* Example
 
-$HelveticaNeueCyr: 'HelveticaNeueCyr', Helvetica, Arial, sans-serif;
 @font-face {
-    font-family: 'HelveticaNeueCyr';
-    // *.eot for old IE > 9
-    //src:         url('../fonts/helveticaneuecyr/light/helveticaneuecyrlight.eot');
-    //src:         url('../fonts/helveticaneuecyr/light/helveticaneuecyrlight.eot?#iefix') format('embedded-opentype'),
-    src:         url('../fonts/helveticaneuecyr/light/helveticaneuecyrlight.woff2') format('woff2'),
-        // *.ttf for support old Android > 4.4
-        //url('../fonts/helveticaneuecyr/light/helveticaneuecyrlight.ttf') format('truetype'),
-    url('../fonts/helveticaneuecyr/light/helveticaneuecyrlight.woff') format('woff');
-    font-weight: 400;
-    font-style:  normal;
-}
+    font-family: 'CustomFont';
+    src: url('../fonts/Custom-Font.eot');
+    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Custom-Font.woff') format('woff'),
+         url('../fonts/Custom-Font.svg#custom_font') format('svg');
+    font-weight: 400;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+    }
 
-/* END external font Helvetica Neue */
 
-/* fonts */
-// todo: datauri?autogen?gulp/grunt?
-//@import "variables";
-// Aleo Regular
-//@import "../fonts/aleo/aleoregular/aleoregular";
-
-////== Default site font styles
-//%font__type-0 {
-//  font-weight: 400;
-//  font-style: normal;
-//  font-family: $font__family-main;
-//}
-//
-////== External font styles
-//%font__type-1 {
-//  font-weight: 400;
-//  font-style: normal;
-//  font-family: "External Font Name", $font__family-main;
-//}
+// Var for using custom font
+$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
+*/

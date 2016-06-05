@@ -1,22 +1,19 @@
 module.exports = {
-    "autoprefixerConfig": [
-        "> 1%",
-        "last 2 versions",
-        "Firefox ESR",
-        "android 4"
-    ],
     "postcss": [],
     "svg": {
         "active": true,
-        "workflow": "symbols",
+        "workflow": "sprite",
         "symbolsConfig": {
-            "loadingType": "separate-file-with-link",
+            "loadingType": "inject",
             "usePolyfillForExternalSymbols": true,
-            "pathToExternalSymbolsFile": "static/img/general/"
+            "pathToExternalSymbolsFile": ""
         }
     },
+    "css": {
+        "workflow": "manual"
+    },
     "js": {
-        "workflow": "modular",
+        "workflow": "concat",
         "bundler": "webpack",
         "lint": true,
         "useBabel": true,
@@ -45,17 +42,8 @@ module.exports = {
         "sounds": {},
         "taskFinishedText": "Task finished at: "
     },
-    "browserSyncConfig": {
-        "baseDir": "./dev",
-        "port": 3004,
-        "open": false,
-        "browser": "default",
-        "startUrl": "/index.html",
-        "useNotifyInBrowser": false,
-        "injectChanges": true
-    },
-    "minifyHtml": true,
-    "staticPrefix": "static/",
+    "minifyHtml": false,
+    "generateStaticPath": true,
     "buildPath": "./builds/",
     "useBuildVersioning": true,
     "useArchiver": true,
@@ -63,10 +51,13 @@ module.exports = {
     "templater": "handlebars",
     "cssPreprocessor": "scss",
     "useImagesForDisplayWithDpi": [
-        96
+        96,
+        192
     ],
     "fs": {
         "staticFolderName": "static",
-        "imagesFolderName": "img"
-    }
+        "imagesFolderName": "img",
+        "componentsFolderName": "components"
+    },
+    "staticPrefix": "static/"
 };

@@ -1,27 +1,32 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="ru">
 
-<head>
-    {{> head/head head.defaults}}
-</head>
+    <head>
+        {{> head/head head.defaults}}
+    </head>
 
-<body class="page">
-    {{!> mics/ga}}
-    %=symbols=%
+    <body class="page">
+        %=symbols=%
 
-    <section class="page__wrapper">
-        {{> header/header}}
-        {{> content/content}}
-    </section>
+        <section class="page__wrapper">
 
-    <footer class="page__footer">
-        {{> footer/footer}}
-    </footer>
+            <!-- Include your modules here -->
 
-    <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
-    <script>svg4everybody();</script>
-    {{! Main scripts. You can replace it, but I recommend you to leave it here }}
-    <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
-</body>
+            {{> example/example}}
+
+            <div class="page__buffer"></div>
+
+        </section>
+
+        <footer class="page__footer">
+            {{> footer/footer}}
+        </footer>
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
 
 </html>
