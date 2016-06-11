@@ -3,7 +3,7 @@ let data = {
         defaults: {
             title: 'default title',
             useSocialMetaTags: false,
-            favicons: 'short',
+            favicons: 'full',
             showSpecials: false,
             ie9: false
         }

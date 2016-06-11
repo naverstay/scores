@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static Nav</title>
+    <style>
+        html, body {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .list {
+            float: left;
+        }
+
+        li {
+            border-bottom: 1px solid rgba(0, 0, 0, .5);
+            padding: 5px 15px 5px 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    {{> misc/ga}}
+    <ol class="list">
+        {{#each __pages}}
+            {{#is name '!==' 'static-nav'}}
+                <li>
+                    <a href="{{href}}">{{name}}</a>
+                </li>
+            {{/is}}
+        {{/each}}
+    </ol>
+</body>
+</html>

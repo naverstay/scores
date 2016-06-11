@@ -20,7 +20,8 @@ html {
     box-sizing: inherit;
 }
 
-body {
+/* body.page */
+.page {
     @if $my-classes {
         // need add vars in vars.scss
         //background: $color__background-body;
@@ -29,20 +30,19 @@ body {
         //font-family: $font__family-main;
         //line-height: $font__line-height;
     }
-}
-
-.page {
     display: flex;
     flex-direction: column;
 
     @include respond-to(lg) {
+        // background: #fff url(http://griddle.it/1170-12-30) repeat-y center top;
         //height: 2348px;
     }
 }
 
-//.container, .container-fluid, .row, html, body, .page__wrapper, .page__footer, .header {
-//  min-width: map-get($breakpoints, xs);
-//}
+// set up fix width
+// .container, .container-fluid, .row, html, .page, .header, .content, .footer {
+//     min-width: map-get($breakpoints, lg);
+// }
 
 // todo: add func/mix/extend
 // .valign {
@@ -93,11 +93,29 @@ body {
     }
 }
 
-//== text-decoration:hover
+//== text-decoration:none
+%tdn {
+    text-decoration: none !important;
+}
+
+//== text-decoration:underline
+%tdu {
+    text-decoration: underline !important;
+}
+
+//== text-decoration:underline :hover:none
 %tduhn {
     text-decoration: underline;
-    &:hover {
+    @include hover-focus {
         text-decoration: none;
+    }
+}
+
+//== text-decoration:none :hover:underline
+%tduhn {
+    text-decoration: none;
+    @include hover-focus {
+        text-decoration: underline;
     }
 }
 

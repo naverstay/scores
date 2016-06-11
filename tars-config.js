@@ -10,7 +10,7 @@ module.exports = {
         "symbolsConfig": {
             "loadingType": "separate-file-with-link",
             "usePolyfillForExternalSymbols": true,
-            "pathToExternalSymbolsFile": "img/general"
+            "pathToExternalSymbolsFile": "/static/img/general/"
         }
     },
     "css": {

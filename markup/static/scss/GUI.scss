@@ -1,9 +1,9 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
 
-a, a:before, a:after, a svg, button, button svg {
+a, a:before, a:after, a svg, button, button svg, input {
     transition-duration: $transition-duration;
-    transition-property: color, background-color, opacity, fill;
+    transition-property: color, background-color, opacity, fill, border;
 }
 
 input[type="text"],
@@ -11,6 +11,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"],
+input[type="tel"],
 textarea {
     @if $my-classes {
         opacity:    1;
