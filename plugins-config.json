@@ -92,7 +92,7 @@
     "gulp-html-prettify": {
         "indent_char": " ",
         "indent_size": 4,
-        "indent_inner_html": true
+        "indent_inner_html": false
     },
     "gulp-uglify": {
         "mangle": false,

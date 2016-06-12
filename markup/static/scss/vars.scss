@@ -12,7 +12,7 @@ $transition-duration: .25s;
 //== Breakpoints
 
 $breakpoints: (
-    xs: $screen-xs-min,
+    xs: 320px,
     //ms: $screen-ms-min,
     sm: $screen-sm-min,
     md: $screen-md-min,
