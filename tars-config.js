@@ -62,6 +62,5 @@ module.exports = {
         "staticFolderName": "static",
         "imagesFolderName": "img",
         "componentsFolderName": "components"
-    },
-    "staticPrefix": "static/"
+    }
 };
