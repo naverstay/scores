@@ -30,6 +30,7 @@ let data = {
             }
 
             return result;
-        }
+        },
+        dev: tars.options.watch.isActive
     }
 };

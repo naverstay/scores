@@ -21,7 +21,9 @@
         {{! Main scripts. You can replace it, but I recommend you to leave it here }}
         <script src="__static__js/main%=hash=%%=min=%.js"></script>
 
-        {{!> misc/ga}}
+        {{#unless pages.dev}}
+            {{!> misc/ga}}
+        {{/unless}}
 
     </body>
 
