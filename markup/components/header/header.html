@@ -1,11 +1,23 @@
 <!-- .header BEGIN -->
-<header class="header">
+<header class="header" aria-labelledby="pageHeaderLabel">
     <div class="container-fluid">
+
         <div class="row">
             <div class="col-xs-12">
-                header
+
+                <h1 id="pageHeaderLabel">Header</h1>
+
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+
+                {{> header/nav/nav}}
+
+            </div>
+        </div>
+
     </div>
 </header>
 <!-- END .header -->

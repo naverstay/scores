@@ -1,24 +1,28 @@
 {
     "folders": [
         {
+            "name": "assets"
+        },
+        {
             "name": "data",
             "files": [
                 {
                     "name": "data.js",
-                    "content": "var data = {__componentName__: {}}"
+                    "content": "var data = {\n    __componentName__: {\n        \n    }\n};\n"
                 }
             ]
         }
     ],
-
     "files": [
         {
             "name": "__componentName__.__templateExtension__",
-            "content": "<div class=\"__componentName__\"></div>"
-        }, {
+            "content": "<!-- .__componentName__ BEGIN -->\n<div class=\"__componentName__\">\n    \n</div>\n<!-- END .__componentName__ -->\n"
+        },
+        {
             "name": "__componentName__.__cssExtension__",
-            "content": ".__componentName__ {}"
-        }, {
+            "content": "/* .__componentName__ BEGIN */\n.__componentName__ {\n    \n}\n\n/* END .__componentName__ */\n"
+        },
+        {
             "name": "__componentName__.js",
             "content": ""
         }

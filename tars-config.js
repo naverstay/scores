@@ -50,7 +50,7 @@ module.exports = {
     "generateStaticPath": true,
     "buildPath": "./builds/",
     "useBuildVersioning": true,
-    "useArchiver": false,
+    "useArchiver": true,
     "ulimit": 4096,
     "templater": "handlebars",
     "cssPreprocessor": "scss",
