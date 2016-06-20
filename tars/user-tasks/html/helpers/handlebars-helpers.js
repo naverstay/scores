@@ -10,6 +10,24 @@ const Handlebars = tars.packages.handlebars;
 const handlebarsHelpers = {
 
     /**
+     * This helper gets integer and returns value+1
+     * @param  {Number} n Source
+     * @return {Number} Result number+1
+     */
+    increase: function (value) {
+        return parseInt(value) + 1;
+    },
+
+    /**
+     * This helper gets integer and returns value+2
+     * @param  {Number} n Source
+     * @return {Number} Result number+2
+     */
+    increaseTwo: function (value) {
+        return parseInt(value) + 2;
+    },
+
+    /**
      * This is an example of handlebars-helper
      * This helper gets string and returns it
      * @param  {String} str Source string
