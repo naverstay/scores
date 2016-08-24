@@ -28,7 +28,7 @@
         border-color: transparent transparent $color transparent;
     }
     @if $direction == bottom {
-        border-width: $sizeV $sizeH 0 $sizeV;
+        border-width: $sizeV/2 $sizeH 0 $sizeV/2;
         border-color: $color transparent transparent transparent;
     }
     @if $direction == left {

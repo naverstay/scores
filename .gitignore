@@ -16,7 +16,7 @@ phantomjsdriver.log
 **/svg-sprite.*
 
 bower_components
-future/
+useful/
 design/
 Thumbs.db
 builds/
