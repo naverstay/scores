@@ -3,6 +3,7 @@
 html, body {
     min-width: map-get($breakpoints, xs);
     height: 100%;
+    text-decoration-skip: ink; // todo: ink skip tdu
 }
 
 html {
