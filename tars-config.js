@@ -1,9 +1,5 @@
 module.exports = {
-    "postcss": [
-        // {
-        //     "name": "postcss-object-fit-images"
-        // }
-    ],
+    "postcss": [],
     "svg": {
         "active": true,
         "workflow": "symbols",

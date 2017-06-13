@@ -28,6 +28,10 @@ let plugins = [
             NODE_ENV: JSON.stringify(process.env.NODE_ENV)
         }
     })
+    // new webpack.ProvidePlugin({
+    //     $: 'jquery',
+    //     jQuery: 'jquery'
+    // })
 ];
 
 if (process.env.npmRoot) {
@@ -48,12 +52,6 @@ if (compressJs) {
         }),
         new webpack.optimize.DedupePlugin()
     );
-}
-
-if (tars.config.js.webpack.providePlugin) {
-    plugins.push(
-        new webpack.ProvidePlugin(tars.config.js.webpack.providePlugin)
-    )
 }
 
 if (tars.options.watch.isActive && tars.config.js.webpack.useHMR) {
