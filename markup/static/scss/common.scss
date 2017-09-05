@@ -106,17 +106,17 @@ html {
 
 //== text-decoration:underline :hover:none
 %tduhn {
-    text-decoration: underline;
+    text-decoration: underline !important;
     @include hover-focus {
-        text-decoration: none;
+        text-decoration: none !important;
     }
 }
 
 //== text-decoration:none :hover:underline
 %tdnhu {
-    text-decoration: none;
+    text-decoration: none !important;
     @include hover-focus {
-        text-decoration: underline;
+        text-decoration: underline !important;
     }
 }
 

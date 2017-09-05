@@ -10,7 +10,7 @@ module.exports = {
         }
     },
     "css": {
-        "workflow": "manual"
+        "workflow": "concat"
     },
     "js": {
         "workflow": "modular",
@@ -58,5 +58,6 @@ module.exports = {
         "staticFolderName": "static",
         "imagesFolderName": "img",
         "componentsFolderName": "components"
-    }
+    },
+    "staticPrefix": "static/"
 };
