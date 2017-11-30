@@ -1,11 +1,26 @@
 <!-- .content BEGIN -->
 <main class="content" aria-labelledby="mainContentLabel">
+    <div class="header_spacer"></div>
+    <a href="#" class="gotop_btn btn btn-info">
+        <span class="gotop_btn-text">Наверх</span>
+        <span class="gotop_btn-icon">
+            {{Icon iconName="chevron_up"}}
+        </span>
+    </a>
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2 id="mainContentLabel">Content</h2>
-            </div>
-        </div>
+
+        {{#is name '===' 'rules'}}
+            {{> section-rules/section-rules}}
+        {{/is}}
+
+        {{#is name '===' 'about'}}
+            {{> section-about/section-about}}
+        {{/is}}
+
+        {{#is name '===' 'contacts'}}
+            {{> section-contacts/section-contacts}}
+        {{/is}}
+
     </div>
 </main>
 <!-- END .content -->

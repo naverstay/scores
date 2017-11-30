@@ -33,6 +33,7 @@ html {
     }
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 
     @include respond-to(lg) {
         // background: #fff url(http://griddle.it/1170-12-30) repeat-y center top;

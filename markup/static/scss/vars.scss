@@ -1,7 +1,8 @@
 // http://engageinteractive.co.uk/blog/top-10-scss-mixins
 
 //== see libraries/bootstrap/variables.scss
-//@import "libraries/bootstrap/variables";
+
+@import "libraries/bootstrap/variables";
 
 // $base-bg: #fff url(http://griddle.it/820-10-0) repeat-y center top;
 
@@ -20,5 +21,6 @@ $breakpoints: (
     md: $screen-md-min,
     lg: $screen-lg-min
 );
+
 
 //@debug map-get($breakpoints, xs);

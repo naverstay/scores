@@ -1,0 +1,28 @@
+<!doctype html>
+<html{{! class="no-js"}} lang="ru">
+
+<head>
+    {{> head/head @root.pages.list.rules}}
+</head>
+
+<body class="page">
+
+    %=symbols=%
+
+    {{!> header/header}}
+
+    {{> content/content @root.pages.list.rules}}
+
+    {{!> footer/footer}}
+
+    {{!<script src="__static__js/separate-js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>}}
+
+    {{! Main scripts. You can replace it, but I recommend you to leave it here }}
+    <script src="__static__js/main%=hash=%%=min=%.js"></script>
+
+    {{!> misc/ga}}
+
+</body>
+
+</html>

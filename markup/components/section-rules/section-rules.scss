@@ -1,0 +1,205 @@
+/* .section-rules BEGIN */
+.section-rules {
+    flex: 1 0 auto;
+    position: relative;
+    margin: 0 -15px;
+
+    @include respond-to(sm) {
+        margin: unset;
+        padding-top: 135px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 31.55%;
+            border-left: 1px solid #c9cad0;
+        }
+    }
+
+    &__btn {
+        &-text {
+            float: left;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        &-icon {
+            float: right;
+        }
+    }
+
+    &__border {
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            left: -1000px;
+            right: -1000px;
+            border-top: 1px solid #c9cad0;
+        }
+
+        &:before {
+            top: 0;
+        }
+
+        &:after {
+            bottom: 0;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: bold;
+        color: #000;
+        margin: 10px 0 15px;
+
+        + .section-rules__text {
+            margin-top: 18px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: bold;
+        color: #000;
+        letter-spacing: .01em;
+        margin: 10px 0 15px;
+
+        + .section-rules__text {
+            margin-top: 18px;
+        }
+    }
+
+    &__tip {
+        color: #777;
+        font-size: 13px;
+        line-height: 27px;
+        margin-bottom: 10px;
+        letter-spacing: -.022em;
+
+        @include respond-to(sm) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__text {
+        color: #181818;
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 24px;
+
+        &._mod-1 {
+            line-height: 28px;
+        }
+
+        + .section-rules__subtitle {
+            margin-top: 70px;
+        }
+    }
+
+    &__node {
+        padding-left: 25px;
+
+        &-list {
+            padding-left: 0;
+
+            &-item {
+                margin-top: 0;
+                font-size: 15px;
+                line-height: 27px;
+                color: #000;
+            }
+
+            &._unordered {
+                list-style-type: disc;
+            }
+
+            &._ordered {
+                list-style: none;
+            }
+
+            @include respond-to(sm) {
+                margin-bottom: 185px;
+            }
+        }
+
+        @include respond-to(sm) {
+            padding-top: 42px;
+            padding-left: 37px;
+        }
+    }
+
+    &__aside {
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: -20px;
+            left: -20px;
+            border-bottom: 1px solid #c2c7cf;
+        }
+
+        @include respond-to(sm) {
+            max-width: 287px;
+            position: fixed;
+            padding-right: 25px;
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    &__holder {
+
+        @include respond-to(sm) {
+            padding-left: 5px;
+            margin-right: -10px;
+        }
+    }
+
+    &__list {
+        list-style-position: inside;
+        list-style-type: decimal;
+        padding-left: 0;
+        margin-bottom: 30px;
+
+        @include respond-to(sm) {
+            padding-right: 25px;
+            padding-left: 12px;
+        }
+
+        &-item {
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 22px;
+
+            @include respond-to(sm) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &-link {
+            color: #777;
+            font-size: 13px;
+            line-height: 20px;
+
+            &._active {
+                color: #66ab5a;
+                font-weight: 500;
+            }
+        }
+    }
+
+}
+
+/* END .section-rules */
