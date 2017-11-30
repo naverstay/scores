@@ -26,10 +26,15 @@ let data = {
                         name: pages[i].name,
                         title: 'Default Title'
                     }
-                }else if (pages[i].name === 'rules') {
+                } else if (pages[i].name === 'rules') {
                     result[pages[i].name] = {
                         name: pages[i].name,
                         title: 'Rules'
+                    }
+                } else if (pages[i].name === 'contacts') {
+                    result[pages[i].name] = {
+                        name: pages[i].name,
+                        title: 'Contacts'
                     }
                 }
             }

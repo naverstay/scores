@@ -35,6 +35,10 @@ html {
     flex-direction: column;
     overflow-x: hidden;
 
+    &._dark {
+        background: #fafafa;
+    }
+
     @include respond-to(lg) {
         // background: #fff url(http://griddle.it/1170-12-30) repeat-y center top;
         //height: 2348px;

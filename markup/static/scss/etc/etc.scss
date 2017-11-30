@@ -1,6 +1,7 @@
 .header_spacer {
     height: 61px;
     background: #fafafa;
+    border-bottom: 1px solid #e3e7ec;
 
     @include respond-to(sm) {
         height: 72px;
@@ -35,5 +36,9 @@
         background: #66ab5a;
         box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
         border-radius: 100%;
+
+        .icon__chevron_up {
+            fill: #fff;
+        }
     }
 }

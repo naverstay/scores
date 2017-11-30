@@ -1,0 +1,187 @@
+/* .section-contacts BEGIN */
+.section-contacts {
+    padding-top: 78px;
+    margin: 0 auto;
+    max-width: 616px;
+
+    @include respond-to(sm) {
+        padding-top: 95px;
+    }
+
+    &__title {
+        color: #313131;
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: .01em;
+        text-align: center;
+        margin: 0 0 43px;
+
+        @include respond-to(sm) {
+            font-size: 38px;
+            line-height: 48px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__tip {
+        color: #313131;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        padding: 0 10px;
+        margin-bottom: 30px;
+
+        @include respond-to(sm) {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__phone {
+        margin: 0 auto 60px;
+        position: relative;
+        width: 100%;
+        max-width: 328px;
+
+        &-icon {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+
+            .icon__plane {
+                width: 24px;
+                height: 24px;
+                fill: #66ab5a;
+            }
+        }
+
+        &-info {
+            display: block;
+            font-size: 12px;
+            line-height: 14px;
+            color: #7e8392;
+        }
+
+        &-number {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17px;
+            color: #313131;
+            margin-bottom: 3px;
+        }
+
+        .caret {
+            position: absolute;
+            top: 15px;
+            right: 38px;
+            border: none !important;
+
+            .icon__chevron_up {
+                width: 8px;
+                transform: rotate(180deg);
+                fill: #979ba7;
+            }
+        }
+
+        .btn {
+            padding: 8px 50px;
+            text-align: center;
+            height: 52px;
+            border-radius: 26px;
+        }
+    }
+
+    &__form {
+        background: #fff;
+        padding: 30px 20px;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        margin-bottom: 60px;
+
+        @include respond-to(sm) {
+            padding: 30px 30px 40px;
+        }
+
+        &-row {
+            @extend %cf;
+            margin-left: -15px;
+        }
+
+        &-cell {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 15px;
+
+            &._half {
+                @include respond-to(sm) {
+                    width: 50%;
+                    float: left;
+                }
+            }
+        }
+
+        &-input {
+            padding: 15px 14px 2px;
+            font-size: 12px;
+            line-height: 14px;
+            color: #1c2239;
+
+            &._ta {
+                min-height: 100px;
+            }
+        }
+
+        &-label {
+            @include transition(top .3s, font-size .3s);
+            position: absolute;
+            padding: 0;
+            left: 30px;
+            top: 15px;
+            color: #7e8392;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+        }
+
+        .section-contacts__form-input:focus +,
+        ._not-empty + {
+            .section-contacts__form-label {
+                pointer-events: none;
+                top: 8px;
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+
+        &-controls {
+
+            .btn {
+                width: 100%;
+                font-size: 12px;
+                line-height: 15px;
+                font-weight: 500;
+                min-height: 45px;
+                text-transform: uppercase;
+            }
+
+            @include respond-to(sm) {
+                text-align: center;
+                padding-top: 15px;
+
+                .btn {
+                    width: auto;
+                }
+            }
+        }
+
+        &-btn-text {
+            padding: 0 17px;
+        }
+
+    }
+
+}
+
+/* END .section-contacts */

@@ -1,0 +1,77 @@
+<!-- .section-contacts BEGIN -->
+
+<div class="section-contacts">
+    <h2 class="section-contacts__title">Свяжитесь с нами</h2>
+
+    <p class="section-contacts__tip">
+        Медийные форматы, нативная реклама, видео и сложные спецпроекты с брендирование страничек.
+    </p>
+
+    <div class="section-contacts__phone">
+        <div class="dropdown">
+            <button class="btn btn-block dropdown-toggle btn-info" type="button" data-toggle="dropdown">
+                <span class="section-contacts__phone-icon">
+                    {{Icon iconName="plane"}}
+                </span>
+                <span class="section-contacts__phone-number">
+                    +3 801 535 52 12
+                </span>
+                <span class="section-contacts__phone-info">
+                    По техническим вопросам
+                </span>
+                <span class="caret">
+                    {{Icon iconName="chevron_up"}}
+                </span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="section-contacts__form">
+        <form action="#">
+            <div class="section-contacts__form-row">
+                <div class="section-contacts__form-cell has-success _half">
+                    <input value="hi@flatstudio.co" id="contact_email"
+                           class="section-contacts__form-input _not-empty form-control js-check-empty"/>
+                    <label class="section-contacts__form-label" for="contact_email">Ваш email</label>
+                </div>
+                <div class="section-contacts__form-cell _half">
+                    <input id="contact_name"
+                           class="section-contacts__form-input form-control js-check-empty"/>
+                    <label class="section-contacts__form-label" for="contact_name">Ваше имя</label>
+                </div>
+            </div>
+            <div class="section-contacts__form-row">
+                <div class="section-contacts__form-cell _half">
+                    <select class="selectpicker" title="Цель письма">
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                    </select>
+                </div>
+                <div class="section-contacts__form-cell _half">
+                    <input id="contact_phone"
+                           class="section-contacts__form-input form-control js-check-empty"/>
+                    <label class="section-contacts__form-label" for="contact_phone">Ваш телефон</label>
+                </div>
+            </div>
+            <div class="section-contacts__form-row">
+                <div class="section-contacts__form-cell">
+                    <textarea id="contact_msg"  class="section-contacts__form-input _ta form-control js-check-empty"></textarea>
+                    <label class="section-contacts__form-label" for="contact_msg">Ваше сообщение</label>
+                </div>
+            </div>
+            <div class="section-contacts__form-controls">
+                <button class="btn btn-success">
+                    <span class="section-contacts__form-btn-text">Отправить сообщение</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- END .section-contacts -->
