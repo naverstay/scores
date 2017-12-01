@@ -4,7 +4,7 @@
     position: relative;
     margin: 0 -15px;
 
-    @include respond-to(sm) {
+    @include respond-to(md) {
         margin: unset;
         padding-top: 135px;
 
@@ -152,14 +152,18 @@
             border-bottom: 1px solid #c2c7cf;
         }
 
-        @include respond-to(sm) {
-            max-width: 287px;
+        @include respond-to(md) {
+            max-width: 247px;
             position: fixed;
             padding-right: 25px;
 
             &:before {
                 display: none;
             }
+        }
+
+        @include respond-to(lg) {
+            max-width: 287px;
         }
     }
 

@@ -1,0 +1,228 @@
+/* .section-tournaments BEGIN */
+.section-tournaments {
+
+    &__bg {
+        //display: inline-block;
+        //vertical-align: top;
+        position: relative;
+        min-height: 450px;
+        margin-bottom: 50px;
+        background: url(__static__assets/section-tournaments/tournament_bg.jpg) no-repeat 50% 50%;
+        background-size: cover;
+
+        &-img {
+            display: inline-block;
+            vertical-align: top;
+            max-width: 100%;
+        }
+
+        @include respond-to(sm) {
+            margin-bottom: 135px;
+        }
+    }
+
+    &__guy {
+        text-align: center;
+
+        &-img {
+            display: inline-block;
+            vertical-align: top;
+            max-width: 100%;
+        }
+
+        @include respond-to(sm) {
+            position: absolute;
+            bottom: 0;
+            left: 49%;
+            z-index: 1;
+        }
+    }
+
+    &__info {
+        text-align: center;
+        padding-top: 60px;
+        //position: absolute;
+        //top: 0;
+        //bottom: 0;
+        //left: 0;
+        //right: 0;
+        color: #fff;
+
+        .container {
+            max-width: 970px;
+        }
+
+        @include respond-to(sm) {
+            text-align: left;
+            padding-top: 77px;
+            padding-bottom: 77px;
+        }
+
+        .pull-right {
+            .section-tournaments__info-title {
+                margin-bottom: 0;
+
+                @include respond-to(sm) {
+                    margin-bottom: 7px;
+                    text-align: right;
+                }
+            }
+
+            .section-tournaments__info-subtitle {
+                text-align: center;
+                font-size: 14px;
+                margin-bottom: 60px;
+
+                @include respond-to(sm) {
+                    text-align: right;
+                    font-size: 21px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &-title {
+            text-align: center;
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: bold;
+            margin: 0 0 30px;
+            text-transform: uppercase;
+
+            @include respond-to(sm) {
+                font-size: 48px;
+                line-height: 56px;
+                text-align: left;
+                margin-bottom: 5px;
+            }
+        }
+
+        &-subtitle {
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 21px;
+            margin: 0 0 20px;
+            text-transform: uppercase;
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 26px;
+            margin-top: 24px;
+            margin-bottom: 40px;
+            text-align: center;
+
+            @include respond-to(sm) {
+                text-align: left;
+            }
+        }
+
+        &-counter {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            max-width: 40%;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: bold;
+            padding-left: 22px;
+            margin: 3px 0 50px 18px;
+            text-transform: uppercase;
+            text-align: left;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                height: 15px;
+                margin-top: -8px;
+                border-left: 1px solid rgba(255, 255, 255, .2);
+            }
+
+            @include respond-to(sm) {
+                font-size: 17px;
+                line-height: 1;
+                margin-top: 10px;
+                margin-bottom: 0;
+                max-width: none;
+            }
+        }
+
+        &-logo {
+            display: inline-block;
+            vertical-align: top;
+
+            &-img {
+                display: block;
+            }
+        }
+    }
+
+    &__list {
+        list-style: none;
+        padding-left: 0;
+        margin: 0 auto 43px;
+        max-width: 940px;
+
+        .pull-right {
+            .section-tournaments__info-title {
+                margin-bottom: 0;
+            }
+        }
+
+        @include respond-to(sm) {
+            .pull-right {
+                .section-tournaments__info-title {
+                    font-size: 72px;
+                    text-align: right;
+                    margin-bottom: 30px;
+                }
+
+                .section-tournaments__info-subtitle {
+                    color: #7e8392;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: 400;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    &__item {
+        text-align: center;
+        margin-bottom: 55px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #c2c7cf;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        .section-tournaments__info-subtitle {
+            text-align: center;
+            color: #7e8392;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        @include respond-to(sm) {
+            text-align: left;
+            padding-bottom: 70px;
+            margin-bottom: 45px;
+
+            + .section-tournaments__item {
+                margin-top: 75px;
+            }
+
+            .section-tournaments__info-subtitle {
+                text-align: right;
+            }
+
+        }
+    }
+
+}
+
+/* END .section-tournaments */

@@ -1,0 +1,217 @@
+/* .section-about BEGIN */
+.section-about {
+    padding-top: 85px;
+    margin: 0 auto;
+    max-width: 950px;
+
+    @include respond-to(sm) {
+        padding-top: 75px;
+    }
+
+    &__img {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+
+        &-w {
+            margin: 0 -15px 26px;
+
+            @include respond-to(sm) {
+                margin: 0 -450px 35px 0;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    &__title {
+        color: #313131;
+        text-align: center;
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: bold;
+        margin: 0 0 30px;
+        text-transform: uppercase;
+
+        @include respond-to(sm) {
+            text-align: left;
+            margin-top: 80px;
+            margin-bottom: 47px;
+            font-size: 48px;
+            line-height: 56px;
+
+            &.text-center {
+                text-align: center;
+            }
+        }
+
+        ._clr-gray {
+            color: #c8c8c8;
+        }
+    }
+
+    &__tags {
+        @extend %cf;
+        margin-left: -8px;
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 18px;
+        text-align: center;
+
+        @include respond-to(sm) {
+            margin-bottom: 50px;
+            text-align: left;
+
+            &.text-center {
+                text-align: center;
+                margin-bottom: 70px;
+            }
+        }
+    }
+
+    &__tag {
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 5px;
+        margin-bottom: 10px;
+
+        &-text {
+            display: block;
+            font-size: 15px;
+            line-height: 25px;
+            color: #7e8392;
+            text-transform: uppercase;
+            font-weight: 500;
+
+            @include respond-to(sm) {
+                text-transform: none;
+                font-size: 12px;
+                line-height: 26px;
+                padding: 1px 15px;
+                text-transform: uppercase;
+                border: 1px solid #66ab5a;
+                border-radius: 2px;
+                color: #313131;
+            }
+        }
+    }
+
+    &__text {
+        color: #7e8392;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 30px;
+
+        @include respond-to(sm) {
+            padding-right: 20px;
+
+            &.text-center {
+                max-width: 620px;
+                margin: 0 auto 120px;
+                padding: 0;
+            }
+        }
+    }
+
+    &__list {
+        @extend %cf;
+        list-style: none;
+        padding-left: 0;
+        padding-top: 25px;
+        position: relative;
+
+        @include respond-to(sm) {
+            padding-top: 0;
+            margin-bottom: 140px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                border-left: 1px solid #c2c7cf;
+            }
+        }
+    }
+
+    &__item {
+        text-align: center;
+        position: relative;
+        padding: 50px 0 80px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -20px;
+            left: -20px;
+            border-top: 1px solid #c2c7cf;
+        }
+
+        @include respond-to(sm) {
+            text-align: left;
+            padding: 0;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        &-icon {
+            margin: 10px 0 30px;
+            display: inline-block;
+            vertical-align: top;
+
+            .icon__plane {
+                width: 28px;
+                height: 28px;
+                fill: #66ab5a;
+            }
+
+            @include respond-to(sm) {
+                margin: 40px 0 37px;
+            }
+        }
+
+        &-name {
+            font-size: 21px;
+            line-height: 1;
+            font-weight: bold;
+            color: #313131;
+            margin-bottom: 25px;
+
+            @include respond-to(sm) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &-text {
+            color: #7e8392;
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
+
+        @include respond-to(sm) {
+            position: relative;
+            float: left;
+            width: 50%;
+            border-bottom: 1px solid #c2c7cf;
+            padding: 0 12% 40px 5px;
+
+            &._right {
+                padding: 0 5px 40px 12%;
+                text-align: right;
+            }
+
+            &._last {
+                border-bottom: 0;
+            }
+        }
+
+    }
+
+}
+
+/* END .section-about */

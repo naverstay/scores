@@ -81,6 +81,14 @@ a.btn {
     @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
 }
 
+.btn-info-2 {
+    @include button-variant(#1c2239, #fff, #ccc);
+
+    .bs-caret {
+        float: right;
+    }
+}
+
 // Warning appears as orange
 .btn-warning {
     @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
@@ -153,6 +161,18 @@ a.btn {
 .btn-block {
     display: block;
     width: 100%;
+
+    &.selectpicker {
+        display: none !important;
+    }
+
+    .filter-option {
+        padding: 2px 0 0;
+        color: #7e8392;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+    }
 }
 
 // Vertically space out multiple block buttons

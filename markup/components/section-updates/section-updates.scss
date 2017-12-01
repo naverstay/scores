@@ -1,0 +1,127 @@
+/* .section-updates BEGIN */
+.section-updates {
+    &__bg {
+        //display: inline-block;
+        //vertical-align: top;
+        position: relative;
+        margin-bottom: 50px;
+        min-height: 515px;
+        background: url(__static__assets/section-updates/update_bg.jpg) no-repeat 50% 50%;
+        background-size: cover;
+
+        @include respond-to(sm) {
+            margin-bottom: 140px;
+        }
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__info {
+        text-align: left;
+        padding-top: 58px;
+        //position: absolute;
+        //top: 0;
+        //bottom: 0;
+        //left: 0;
+        //right: 0;
+        color: #fff;
+
+        .container {
+            max-width: 970px;
+        }
+
+        @include respond-to(sm) {
+            padding-top: 145px;
+            padding-bottom: 77px;
+        }
+
+        &-title {
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: bold;
+            margin: 0 0 32px;
+            text-align: center;
+            text-transform: uppercase;
+
+            @include respond-to(sm) {
+                font-size: 48px;
+                line-height: 56px;
+                text-align: left;
+                margin-bottom: 5px;
+            }
+        }
+
+        &-subtitle {
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 21px;
+            margin: 0 0 20px;
+            text-transform: uppercase;
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 26px;
+            margin-top: 24px;
+            margin-bottom: 30px;
+            text-align: center;
+
+            @include respond-to(sm) {
+                text-align: left;
+                margin-bottom: 40px;
+            }
+        }
+
+        &-counter {
+            position: relative;
+            float: left;
+            font-size: 17px;
+            line-height: 1;
+            font-weight: bold;
+            padding-left: 22px;
+            margin-top: 10px;
+            margin-left: 18px;
+            text-transform: uppercase;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                height: 15px;
+                margin-top: -8px;
+                border-left: 1px solid rgba(255, 255, 255, .2);
+            }
+
+        }
+
+        &-logo {
+            float: left;
+
+            &-img {
+                display: block;
+            }
+        }
+
+        .section-contacts__form-controls {
+            padding-top: 0;
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        @include respond-to(sm) {
+
+            .section-contacts__form {
+                padding: 40px 30px 30px;
+            }
+        }
+    }
+
+}
+
+/* END .section-updates */

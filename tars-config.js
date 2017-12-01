@@ -13,7 +13,7 @@ module.exports = {
         "workflow": "manual"
     },
     "js": {
-        "workflow": "modular",
+        "workflow": "concat",
         "bundler": "webpack",
         "lint": true,
         "useBabel": true,

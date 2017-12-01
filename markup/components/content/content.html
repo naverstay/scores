@@ -7,20 +7,22 @@
             {{Icon iconName="chevron_up"}}
         </span>
     </a>
-    <div class="container">
 
-        {{#is name '===' 'rules'}}
-            {{> section-rules/section-rules}}
-        {{/is}}
+    {{#is name '===' 'rules'}}
+        {{> section-rules/section-rules}}
+    {{/is}}
 
-        {{#is name '===' 'about'}}
-            {{> section-about/section-about}}
-        {{/is}}
+    {{#is name '===' 'about'}}
+        {{> section-about/section-about}}
 
-        {{#is name '===' 'contacts'}}
-            {{> section-contacts/section-contacts}}
-        {{/is}}
+        {{> section-tournaments/section-tournaments}}
 
-    </div>
+        {{> section-updates/section-updates}}
+    {{/is}}
+
+    {{#is name '===' 'contacts'}}
+        {{> section-contacts/section-contacts}}
+    {{/is}}
+
 </main>
 <!-- END .content -->

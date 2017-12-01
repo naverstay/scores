@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "directories": {},
   "dependencies": {
-    "babel-preset-es2015": "^6.9.0"
+    "babel-preset-es2015": "^6.9.0",
+    "bootstrap-sass": "^3.3.7"
   },
   "devDependencies": {
     "bootstrap-select": "^1.12.4",
