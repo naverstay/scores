@@ -46,6 +46,11 @@ let data = {
                         name: pages[i].name,
                         title: 'Experts'
                     }
+                } else if (pages[i].name === 'events') {
+                    result[pages[i].name] = {
+                        name: pages[i].name,
+                        title: 'Events'
+                    }
                 }
             }
 

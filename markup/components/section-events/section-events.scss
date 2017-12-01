@@ -1,0 +1,369 @@
+/* .section-events BEGIN */
+.section-events {
+    padding-top: 100px;
+
+    &__list {
+        @extend %cf;
+        list-style: none;
+        margin-left: -50px;
+        padding-left: 0;
+    }
+
+    &__item {
+        float: left;
+        padding-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__banner {
+        position: relative;
+        max-width: 100%;
+        width: 410px;
+        color: #fff;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+
+        &._hockey {
+            background-image: url(__static__assets/section-events/events_hockey_bg.jpg);
+        }
+
+        &._soccer {
+            background-image: url(__static__assets/section-events/events_soccer_bg.jpg);
+        }
+
+        &._tennis {
+            background-image: url(__static__assets/section-events/events_tennis_bg.jpg);
+        }
+
+        &._basket {
+            background-image: url(__static__assets/section-events/events_basket_bg.jpg);
+        }
+
+        &-content {
+            padding: 20px 15px 0;
+            min-height: 530px;
+
+            @include respond-to(sm) {
+                min-height: 570px;
+                padding: 40px 30px 0;
+            }
+
+            ._tennis & {
+                padding-top: 12px;
+            }
+        }
+
+        &-caption {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 7px;
+
+            ._tennis & {
+                font-size: 21px;
+                line-height: 27px;
+                padding-left: 97px;
+                margin-bottom: 5px;
+            }
+        }
+
+        &-tip {
+            opacity: .6;
+            font-size: 12px;
+            line-height: 14px;
+            margin-bottom: 130px;
+
+            @include respond-to(sm) {
+                margin-bottom: 150px;
+            }
+
+            ._tennis & {
+                padding-left: 97px;
+                margin-bottom: 33px;
+            }
+        }
+
+        &-logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &-img {
+            display: block;
+        }
+
+        &-status {
+            text-transform: uppercase;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 10px;
+            line-height: 12px;
+            font-weight: bold;
+            margin-bottom: 8px;
+
+            &._online {
+                margin-left: 3px;
+                width: 6px;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    border-radius: 100%;
+                    margin-top: 3px;
+                    width: 6px;
+                    height: 6px;
+                    background: #d0021b;
+                }
+            }
+        }
+
+        &-counter {
+            text-transform: uppercase;
+            float: right;
+            opacity: .6;
+            font-size: 10px;
+            line-height: 12px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        &-list {
+            clear: both;
+            list-style: none;
+            margin: 0 -20px 20px;
+            padding: 0;
+            background: rgba(0, 0, 0, .25);
+
+            ._tennis & {
+                background: rgba(255, 255, 255, .05);
+            }
+
+            @include respond-to(sm) {
+                margin: 0 -30px 20px;
+            }
+
+            &._last {
+                margin-bottom: 0;
+            }
+
+            ._tennis & {
+                margin-top: 7px;
+            }
+        }
+
+        &-item {
+            @extend %cf;
+            padding: 10px 20px;
+            position: relative;
+
+            @include respond-to(sm) {
+                padding: 10px 30px;
+            }
+
+            ._tennis & {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    right: 20px;
+                    left: 20px;
+                    top: 0;
+                    border-top: 1px solid rgba(255, 255, 255, .1);
+                }
+
+                &:first-child {
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &-set {
+            @extend %cf;
+            padding: 3px 0;
+
+            &:last-child {
+                .section-events__banner-set_cell {
+                    &:before {
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &-set_score {
+            float: right;
+        }
+
+        &-set_advt {
+            float: right;
+            font-size: 12px;
+            line-height: 15px;
+            opacity: .51;
+
+            .section-events__banner-set:first-child & {
+                font-size: 13px;
+                line-height: 16px;
+                opacity: 1;
+            }
+        }
+
+        &-set_cell {
+            float: left;
+            min-width: 20px;
+            padding: 0 2px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 15px;
+            opacity: .5;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: -6px;
+                border-left: 1px solid rgba(255, 255, 255, .1);
+            }
+
+            &:last-child {
+                opacity: 1;
+
+                &:before {
+                    display: none;
+                }
+            }
+
+            &:first-child {
+                opacity: 1;
+            }
+        }
+
+        &-country {
+            float: left;
+        }
+
+        &-flag {
+            display: block;
+        }
+
+        &-gamer {
+            float: left;
+            font-size: 12px;
+            line-height: 15px;
+            padding-left: 10px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+        opacity: .6;
+
+        &:hover {
+            opacity: 1;
+            color: #fff;
+        }
+    }
+
+    &__team {
+        position: relative;
+        float: left;
+        width: 40%;
+
+        &-status {
+            position: absolute;
+            top: 5px;
+            left: -10px;
+
+            @include respond-to(sm) {
+                left: -17px;
+            }
+
+            &._red {
+                background: #d0021b;
+                border-radius: 100%;
+                width: 6px;
+                height: 6px;
+            }
+
+            &._card {
+                top: 0;
+                left: -20px;
+            }
+        }
+
+        &-logo {
+            float: left;
+        }
+
+        &-name {
+            float: left;
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: 500;
+            padding-left: 10px;
+            letter-spacing: .01em;
+        }
+
+        &-img {
+            display: block;
+        }
+
+        &:first-child {
+            float: right;
+
+            .section-events__team-name {
+                float: right;
+                padding: 0 10px 0 0;
+            }
+
+            .section-events__team-status {
+                left: auto;
+                right: -10px;
+
+                &._card {
+                    left: auto;
+                    right: -14px;
+                }
+
+                @include respond-to(sm) {
+                    right: -17px;
+
+                    &._card {
+                        left: auto;
+                        right: -20px;
+                    }
+                }
+            }
+
+            .section-events__team-logo {
+                float: right;
+            }
+        }
+    }
+
+    &__score {
+        float: left;
+        width: 20%;
+        text-align: center;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 500;
+
+        &._red {
+            color: #d0021b;
+        }
+    }
+}
+
+/* END .section-events */
