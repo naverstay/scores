@@ -1,0 +1,219 @@
+/* .section-experts BEGIN */
+.section-experts {
+    padding-top: 100px;
+
+    &__list {
+        @extend %cf;
+        list-style: none;
+        margin-left: -50px;
+        padding-left: 0;
+    }
+
+    &__item {
+        float: left;
+        padding-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__banner {
+        position: relative;
+        max-width: 410px;
+        color: #fff;
+
+        &-img {
+            display: block;
+            max-width: 100%;
+        }
+
+        &-content {
+            padding: 20px 15px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+
+            @include respond-to(sm) {
+                padding: 35px 30px;
+            }
+        }
+    }
+
+    &__photo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        pointer-events: none;
+        max-width: 78%;
+
+        &-img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    &__promo {
+        margin-bottom: 32px;
+
+        @include respond-to(sm) {
+            margin-bottom: 60px;
+        }
+
+        &-text {
+            font-size: 24px;
+            line-height: 34px;
+            letter-spacing: -.06em;
+            text-transform: uppercase;
+
+            @include respond-to(sm) {
+                font-size: 32px;
+                line-height: 46px;
+            }
+        }
+
+        &-sup {
+            font-size: 18px;
+            line-height: 34px;
+            padding-left: 10px;
+
+            @include respond-to(sm) {
+                font-size: 25px;
+                line-height: 46px;
+            }
+
+            ._hockey & {
+                color: #3381d0;
+            }
+
+            ._basket & {
+                color: #d47b19;
+            }
+
+            ._soccer & {
+                color: #4cdc33;
+            }
+
+            ._tennis & {
+                color: #d6b031;
+            }
+        }
+    }
+
+    &__quote {
+        margin-bottom: 18px;
+
+        @include respond-to(sm) {
+            margin-bottom: 20px;
+        }
+
+        ._hockey & {
+            fill: #3381d0;
+        }
+
+        ._basket & {
+            fill: #d47b19;
+        }
+
+        ._soccer & {
+            fill: #4cdc33;
+        }
+
+        ._tennis & {
+            fill: #d6b031;
+        }
+    }
+
+    &__caption {
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: uppercase;
+        letter-spacing: -.03em;
+        margin-bottom: 10px;
+        width: 130px;
+
+        @include respond-to(sm) {
+            font-size: 36px;
+            line-height: 43px;
+            width: 250px;
+        }
+    }
+
+    &__no-ads {
+        font-size: 15px;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: -.02em;
+        opacity: .64;
+        margin-bottom: 10px;
+        width: 110px;
+
+        @include respond-to(sm) {
+            font-size: 18px;
+            line-height: 28px;
+            width: 200px;
+        }
+    }
+
+    &__name {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -.01em;
+        //font-weight: bold;
+        text-transform: uppercase;
+
+        @include respond-to(sm) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    &__tip {
+        opacity: .5;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+
+        @include respond-to(sm) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        bottom: 35px;
+        left: 15px;
+
+        &-img {
+            display: block;
+
+            ._hockey & {
+                max-width: 80%;
+            }
+
+            ._basket & {
+                max-width: 85%;
+            }
+
+            ._tennis & {
+                max-width: 62%;
+            }
+
+            ._soccer & {
+                max-width: 80%;
+            }
+        }
+
+        @include respond-to(sm) {
+            bottom: 30px;
+            left: 30px;
+
+            &-img {
+                max-width: none;
+            }
+        }
+    }
+}
+
+/* END .section-experts */
